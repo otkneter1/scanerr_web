@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div id="app">
+        <header class="header">
+          <h1 class="title">Scanner App</h1>
+        </header>
+
+        <section class="liveCode card" aria-label="Live code">
+          <div class="panel__title">Код в кадре</div>
+          <div id="liveCode" class="liveCode__value">—</div>
+        </section>
+
+      <section class="card">
+        <div class="row">
+          <div class="label">Режим</div>
+          <div class="segmented" role="group" aria-label="Mode selector">
+            <button id="modeTest" class="segmented__btn" type="button">TEST</button>
+            <button id="modeFinal" class="segmented__btn" type="button">FINAL</button>
+          </div>
+        </div>
+
+        <button id="scanBtn" class="primary" type="button">Сканировать</button>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <div class="panel__title">Результат сканирования</div>
+          <div id="scanResult" class="panel__value panel__value--mono">—</div>
+        </div>
+
+        <div class="panel">
+          <div class="panel__title">Статус отправки</div>
+          <div id="sendStatus" class="panel__value">Ожидание</div>
+        </div>
+      </section>
+      </div>
+    </div>
+
+    <!-- Classic script: no ES modules needed at runtime -->
+    <script src="/src/main.js"></script>
+  </body>
+</html>

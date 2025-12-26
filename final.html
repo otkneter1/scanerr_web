@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner App — FINAL</title>
+    <link rel="stylesheet" href="/src/results.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="top">
+        <div class="top__left">
+          <a class="back" href="/results.html">← Назад</a>
+          <h1 class="h1">FINAL — результаты сканирования</h1>
+        </div>
+        <div class="meta">
+          <div>Обновление: <span id="rtStatus">подключение…</span></div>
+          <div>Записей: <span id="count">0</span></div>
+        </div>
+      </header>
+
+      <section class="card">
+        <table class="table" aria-label="Scan results FINAL">
+          <thead>
+            <tr>
+              <th>Время</th>
+              <th>Код</th>
+              <th>Режим</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      window.RESULTS_MODE = 'FINAL'
+    </script>
+    <script src="/src/results.js"></script>
+  </body>
+</html>

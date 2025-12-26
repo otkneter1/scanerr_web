@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner App — TEST</title>
+    <link rel="stylesheet" href="/src/results.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="top">
+        <div class="top__left">
+          <a class="back" href="/results.html">← Назад</a>
+          <h1 class="h1">TEST — сборка / место</h1>
+        </div>
+        <div class="meta">
+          <div>Обновление: <span id="rtStatus">подключение…</span></div>
+          <div>Записей: <span id="count">0</span></div>
+        </div>
+      </header>
+
+      <section class="card">
+        <table class="table" aria-label="Scan results TEST">
+          <thead>
+            <tr>
+              <th>Время</th>
+              <th>Режим</th>
+              <th>Сборка</th>
+              <th>Место</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      window.RESULTS_MODE = 'TEST'
+    </script>
+    <script src="/src/results.js"></script>
+  </body>
+</html>
